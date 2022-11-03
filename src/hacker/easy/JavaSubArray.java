@@ -1,4 +1,4 @@
-package easy;
+package hacker.easy;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package easy;
+package hacker.easy;
 
 import java.text.NumberFormat;
 import java.util.Locale;

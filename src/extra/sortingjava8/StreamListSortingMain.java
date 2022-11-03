@@ -38,6 +38,15 @@ public class StreamListSortingMain {
         System.out.println("SalaryBise : " + sortedList4);
         System.out.println("AgeBise : " + sortedList5);
 
+        // filter Salary and Age by
+
+        List<Employee>sortedData=employees.stream()
+                .filter(x->x.getSalary()>45000 && x.getAge()>29)
+                .collect(Collectors.toList());
+
+        System.out.println("sortedData : " + sortedData);
+
+
 
         // Sum Of Total Salary Given Employees
         int totalSalary = employees.stream().collect(Collectors.summingInt(salary -> (int) salary.getSalary()));
